@@ -1,0 +1,22 @@
+<div class="login-container">
+    <div class="logo">Movie Talks</div>
+    <div class="desc">
+        Let's talk about Movie Magic, <br>
+        Share your experience and opinion with us!
+
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="umane" class="form-control" [(ngModel)]="username" />
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
